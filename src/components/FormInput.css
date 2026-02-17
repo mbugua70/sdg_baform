@@ -1,0 +1,28 @@
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-input-group label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--saf-text);
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--saf-white);
+  color: var(--saf-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--saf-green);
+  box-shadow: 0 0 0 3px rgba(77, 184, 72, 0.2);
+}

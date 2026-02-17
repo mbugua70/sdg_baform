@@ -1,0 +1,133 @@
+.reporting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.reporting-card {
+  background: var(--saf-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.reporting-card h1 {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  color: var(--saf-text);
+}
+
+.reporting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.error-message {
+  color: var(--saf-red);
+  font-size: 0.875rem;
+  margin: 0;
+  text-align: center;
+}
+
+.success-message {
+  color: var(--saf-green);
+  font-size: 0.875rem;
+  margin: 0;
+  text-align: center;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background-color: var(--saf-green);
+  color: var(--saf-white);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: var(--saf-green-dark);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--saf-white);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin: 0 0 1rem 0;
+  text-align: center;
+  color: var(--saf-text);
+}
+
+.modal-details {
+  margin-bottom: 1.5rem;
+}
+
+.modal-details p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.cancel-button,
+.confirm-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-button {
+  background: #e5e7eb;
+  color: var(--saf-text);
+}
+
+.cancel-button:hover {
+  background: #d1d5db;
+}
+
+.confirm-button {
+  background: var(--saf-green);
+  color: var(--saf-white);
+}
+
+.confirm-button:hover {
+  background: var(--saf-green-dark);
+}
